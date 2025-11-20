@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Mail } from "lucide-react";
+import ayelLogo from "@/assets/ayel-logo.jpg";
 
 export const Footer = () => {
   return (
@@ -6,13 +7,12 @@ export const Footer = () => {
       <div className="container py-12 md:py-16">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
-            <div className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-secondary">
-                <span className="text-xl font-bold text-white">A+</span>
-              </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                AYEL
-              </span>
+            <div className="flex items-center">
+              <img 
+                src={ayelLogo} 
+                alt="AYEL Logo" 
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="text-sm text-muted-foreground">
               Votre partenaire santé pour des solutions naturelles et efficaces
