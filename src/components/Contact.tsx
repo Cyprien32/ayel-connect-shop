@@ -30,7 +30,7 @@ export const Contact = () => {
                   </div>
                   <div className="space-y-1">
                     <div className="font-medium">Téléphone</div>
-                    <div className="text-sm text-muted-foreground">+243 XX XX XX XX</div>
+                    <div className="text-sm text-muted-foreground">+237 694153918</div>
                   </div>
                 </CardContent>
               </Card>
@@ -54,7 +54,7 @@ export const Contact = () => {
                   </div>
                   <div className="space-y-1">
                     <div className="font-medium">Adresse</div>
-                    <div className="text-sm text-muted-foreground">Kinshasa, RDC</div>
+                    <div className="text-sm text-muted-foreground">Tradex borne 10, Douala Cameroun</div>
                   </div>
                 </CardContent>
               </Card>
@@ -89,7 +89,7 @@ export const Contact = () => {
 
                 <div className="space-y-2">
                   <label className="text-sm font-medium">Téléphone</label>
-                  <Input type="tel" placeholder="+243 XX XX XX XX" />
+                  <Input type="tel" placeholder="+237 XXX XXX XXX" />
                 </div>
 
                 <div className="space-y-2">
