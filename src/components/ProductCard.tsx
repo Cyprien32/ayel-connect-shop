@@ -2,6 +2,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ShoppingCart } from "lucide-react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 interface ProductCardProps {
   name: string;
@@ -12,6 +13,17 @@ interface ProductCardProps {
 }
 
 export const ProductCard = ({ name, description, image, category, features }: ProductCardProps) => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleOrder = () => {
+    if (location.pathname === "/") {
+      document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      navigate("/#contact");
+    }
+  };
+
   return (
     <Card className="group overflow-hidden border-border/50 bg-gradient-to-b from-card to-muted/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-2">
       <CardContent className="p-0">
@@ -44,7 +56,7 @@ export const ProductCard = ({ name, description, image, category, features }: Pr
       </CardContent>
 
       <CardFooter className="p-6 pt-0">
-        <Button className="w-full gap-2 shadow-md hover:shadow-lg transition-shadow">
+        <Button onClick={handleOrder} className="w-full gap-2 shadow-md hover:shadow-lg transition-shadow">
           <ShoppingCart className="h-4 w-4" />
           Commander
         </Button>
