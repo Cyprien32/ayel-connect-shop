@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 import productsHero from "@/assets/products-hero.jpg";
 
 export const Hero = () => {
@@ -27,9 +28,11 @@ export const Hero = () => {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="gap-2 shadow-lg hover:shadow-xl transition-shadow">
-                Voir nos produits
-                <ArrowRight className="h-5 w-5" />
+              <Button size="lg" className="gap-2 shadow-lg hover:shadow-xl transition-shadow" asChild>
+                <Link to="/produits">
+                  Voir nos produits
+                  <ArrowRight className="h-5 w-5" />
+                </Link>
               </Button>
               <Button size="lg" variant="outline">
                 En savoir plus
