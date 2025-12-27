@@ -17,15 +17,15 @@ const EventsPage = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      <section className="py-20 md:py-32 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+      <section className="relative py-12 md:py-20 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `linear-gradient(to bottom, hsl(var(--primary) / 0.85), hsl(var(--primary) / 0.9)), url('/placeholder.svg')` }}>
         <div className="container text-center space-y-4">
-          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
+          <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-white">
             Nos{" "}
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="text-accent">
               Événements
             </span>
           </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-white/80 max-w-2xl mx-auto">
             Retrouvez-nous lors de nos événements et activités
           </p>
         </div>

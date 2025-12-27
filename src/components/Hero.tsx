@@ -9,7 +9,7 @@ export const Hero = () => {
   };
 
   return (
-    <section id="accueil" className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-accent/5 py-20 md:py-32">
+    <section id="accueil" className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-accent/5 py-12 md:py-20">
       <div className="container relative z-10">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
           <div className="space-y-8">
