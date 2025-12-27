@@ -4,109 +4,119 @@
 
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
 All colors MUST be HSL.
+AYEL Brand Colors: Blue (primary), White (background), Green (accent for nature/plants)
 */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 210 15% 20%;
+    --foreground: 210 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 210 15% 20%;
+    --card-foreground: 210 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 210 15% 20%;
+    --popover-foreground: 210 25% 15%;
 
-    --primary: 142 70% 45%;
+    /* Primary: AYEL Blue */
+    --primary: 200 85% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 65% 50%;
+    /* Secondary: Darker Blue */
+    --secondary: 210 80% 40%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 142 20% 96%;
-    --muted-foreground: 210 10% 50%;
+    --muted: 200 20% 96%;
+    --muted-foreground: 210 15% 45%;
 
-    --accent: 25 95% 53%;
+    /* Accent: Green for nature/plants */
+    --accent: 142 70% 45%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 142 20% 88%;
-    --input: 142 20% 88%;
-    --ring: 142 70% 45%;
+    --border: 200 25% 88%;
+    --input: 200 25% 88%;
+    --ring: 200 85% 50%;
 
     --radius: 0.75rem;
     
-    --medical-green: 142 70% 45%;
-    --medical-green-light: 142 60% 85%;
-    --medical-blue: 210 65% 50%;
-    --medical-orange: 25 95% 53%;
+    /* Brand colors */
+    --ayel-blue: 200 85% 50%;
+    --ayel-blue-dark: 210 80% 40%;
+    --ayel-blue-light: 200 70% 90%;
+    --ayel-green: 142 70% 45%;
+    --ayel-green-light: 142 60% 85%;
+    --ayel-orange: 25 95% 53%;
     
-    --gradient-hero: linear-gradient(135deg, hsl(142 70% 45%) 0%, hsl(210 65% 50%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(142 20% 98%) 100%);
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(200 85% 50%) 0%, hsl(210 80% 40%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(200 20% 98%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(200 85% 50%) 0%, hsl(142 70% 45%) 100%);
     
-    --shadow-soft: 0 4px 24px hsla(142, 70%, 45%, 0.08);
-    --shadow-card: 0 8px 32px hsla(142, 70%, 45%, 0.12);
+    /* Shadows */
+    --shadow-soft: 0 4px 24px hsla(200, 85%, 50%, 0.08);
+    --shadow-card: 0 8px 32px hsla(200, 85%, 50%, 0.12);
+    --shadow-glow: 0 0 40px hsla(200, 85%, 50%, 0.3);
     
+    /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-    --radius: 0.75rem;
-
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-primary: 200 85% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 200 20% 96%;
+    --sidebar-accent-foreground: 210 25% 15%;
+    --sidebar-border: 200 25% 91%;
+    --sidebar-ring: 200 85% 50%;
   }
 
   .dark {
-    --background: 210 20% 12%;
+    --background: 210 25% 10%;
     --foreground: 0 0% 95%;
 
-    --card: 210 20% 15%;
+    --card: 210 25% 13%;
     --card-foreground: 0 0% 95%;
 
-    --popover: 210 20% 15%;
+    --popover: 210 25% 13%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 142 70% 50%;
+    --primary: 200 85% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 65% 55%;
+    --secondary: 210 70% 50%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 20% 20%;
-    --muted-foreground: 210 10% 65%;
+    --muted: 210 25% 18%;
+    --muted-foreground: 200 15% 65%;
 
-    --accent: 25 95% 58%;
+    --accent: 142 70% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 210 20% 25%;
-    --input: 210 20% 25%;
-    --ring: 142 70% 50%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
+    --border: 210 25% 22%;
+    --input: 210 25% 22%;
+    --ring: 200 85% 55%;
+    
+    --ayel-blue: 200 85% 55%;
+    --ayel-blue-dark: 210 70% 50%;
+    --ayel-blue-light: 200 60% 25%;
+    --ayel-green: 142 70% 50%;
+    --ayel-green-light: 142 50% 25%;
+    
+    --sidebar-background: 210 25% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 200 85% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-accent: 210 25% 18%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 210 25% 22%;
+    --sidebar-ring: 200 85% 55%;
   }
 }
 
@@ -118,4 +128,20 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+}
+
+/* WhatsApp floating button animation */
+@keyframes pulse-whatsapp {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 4px 20px hsla(142, 70%, 45%, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 6px 30px hsla(142, 70%, 45%, 0.6);
+  }
+}
+
+.animate-pulse-whatsapp {
+  animation: pulse-whatsapp 2s infinite;
 }

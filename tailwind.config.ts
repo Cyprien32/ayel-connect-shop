@@ -47,10 +47,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "medical-green": "hsl(var(--medical-green))",
-        "medical-green-light": "hsl(var(--medical-green-light))",
-        "medical-blue": "hsl(var(--medical-blue))",
-        "medical-orange": "hsl(var(--medical-orange))",
+        // AYEL Brand colors
+        "ayel-blue": "hsl(var(--ayel-blue))",
+        "ayel-blue-dark": "hsl(var(--ayel-blue-dark))",
+        "ayel-blue-light": "hsl(var(--ayel-blue-light))",
+        "ayel-green": "hsl(var(--ayel-green))",
+        "ayel-green-light": "hsl(var(--ayel-green-light))",
+        "ayel-orange": "hsl(var(--ayel-orange))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -84,10 +87,15 @@ export default {
             height: "0",
           },
         },
+        "float": {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "float": "float 3s ease-in-out infinite",
       },
     },
   },
