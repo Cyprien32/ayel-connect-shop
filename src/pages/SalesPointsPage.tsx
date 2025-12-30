@@ -5,6 +5,7 @@ import { Card } from "@/components/ui/card";
 import { MapPin, Phone, ChevronDown } from "lucide-react";
 import { salesPoints } from "@/data/salesPoints";
 import { useState } from "react";
+import productsGroup from "@/assets/products-group.png";
 
 const SalesPointsPage = () => {
   const [expandedCity, setExpandedCity] = useState<string | null>("Douala");
@@ -13,7 +14,7 @@ const SalesPointsPage = () => {
     <div className="min-h-screen bg-background">
       <Header />
       
-      <section className="relative py-12 md:py-20 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `linear-gradient(to bottom, hsl(var(--primary) / 0.85), hsl(var(--primary) / 0.9)), url('/placeholder.svg')` }}>
+      <section className="relative py-12 md:py-20 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `linear-gradient(to bottom, hsl(var(--primary) / 0.85), hsl(var(--primary) / 0.9)), url(${productsGroup})` }}>
         <div className="container text-center space-y-4">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-white">
             Où Trouver{" "}
