@@ -4,8 +4,11 @@ import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { ProductCard } from "@/components/ProductCard";
 import { products } from "@/data/products";
 import productsGroup from "@/assets/products-group.png";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const ProductsPage = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -13,13 +16,13 @@ const ProductsPage = () => {
       <section className="relative py-20 md:py-32 overflow-hidden bg-gradient-to-br from-primary/5 via-background to-accent/5">
         <div className="container relative z-10 text-center space-y-6">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-            Notre{" "}
+            {t.products.pageTitle}{" "}
             <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Gamme Complète
+              {t.products.pageTitleHighlight}
             </span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Découvrez tous nos produits naturels pour votre santé et votre bien-être
+            {t.products.pageSubtitle}
           </p>
           <img src={productsGroup} alt="Produits AYEL" className="mx-auto max-w-md w-full" />
         </div>

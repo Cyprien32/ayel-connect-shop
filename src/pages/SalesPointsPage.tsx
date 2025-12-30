@@ -6,9 +6,11 @@ import { MapPin, Phone, ChevronDown } from "lucide-react";
 import { salesPoints } from "@/data/salesPoints";
 import { useState } from "react";
 import productsGroup from "@/assets/products-group.png";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const SalesPointsPage = () => {
   const [expandedCity, setExpandedCity] = useState<string | null>("Douala");
+  const { t } = useLanguage();
 
   return (
     <div className="min-h-screen bg-background">
@@ -17,14 +19,10 @@ const SalesPointsPage = () => {
       <section className="relative py-12 md:py-20 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `linear-gradient(to bottom, hsl(var(--primary) / 0.85), hsl(var(--primary) / 0.9)), url(${productsGroup})` }}>
         <div className="container text-center space-y-4">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-white">
-            Où Trouver{" "}
-            <span className="text-accent">
-              Nos Produits
-            </span>
+            {t.salesPoints.title}{" "}
+            <span className="text-accent">{t.salesPoints.titleHighlight}</span>
           </h1>
-          <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            Retrouvez les produits AYEL dans les pharmacies partenaires près de chez vous
-          </p>
+          <p className="text-lg text-white/80 max-w-2xl mx-auto">{t.salesPoints.subtitle}</p>
         </div>
       </section>
 
@@ -53,7 +51,7 @@ const SalesPointsPage = () => {
                         <p className="text-sm text-muted-foreground">{pharmacy.address}</p>
                         {pharmacy.phone && (
                           <a href={`tel:${pharmacy.phone}`} className="text-sm text-primary flex items-center gap-1 mt-1">
-                            <Phone className="h-3 w-3" /> {pharmacy.phone}
+                            <Phone className="h-3 w-3" /> {t.salesPoints.phone}: {pharmacy.phone}
                           </a>
                         )}
                       </div>
