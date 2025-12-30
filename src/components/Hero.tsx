@@ -2,8 +2,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Heart, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import productsGroup from "@/assets/products-group.png";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 export const Hero = () => {
+  const { t } = useLanguage();
+
   const handleWhatsApp = () => {
     window.open("https://wa.me/237699000000?text=Bonjour! Je souhaite en savoir plus sur vos produits.", "_blank");
   };
@@ -15,29 +18,29 @@ export const Hero = () => {
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
               <Heart className="h-4 w-4" />
-              Votre santé, notre priorité
+              {t.hero.badge}
             </div>
             
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-              Solutions Naturelles
+              {t.hero.title1}
               <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                Pour Votre Bien-Être
+                {t.hero.title2}
               </span>
             </h1>
             <p className="text-lg text-muted-foreground max-w-xl">
-              Découvrez notre gamme complète de produits thérapeutiques à base d'ingrédients naturels.
+              {t.hero.description}
             </p>
 
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="gap-2" asChild>
                 <Link to="/produits">
-                  Voir nos produits
+                  {t.hero.viewProducts}
                   <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="gap-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground" onClick={handleWhatsApp}>
                 <MessageCircle className="h-5 w-5" />
-                Nous contacter
+                {t.hero.contactUs}
               </Button>
             </div>
           </div>

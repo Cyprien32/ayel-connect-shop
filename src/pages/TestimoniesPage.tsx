@@ -7,9 +7,12 @@ import { testimonies } from "@/data/testimonies";
 import { products } from "@/data/products";
 import productsGroup from "@/assets/products-group.png";
 import { useState } from "react";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { productTranslations } from "@/i18n/translations";
 
 const TestimoniesPage = () => {
   const [selectedProduct, setSelectedProduct] = useState<string>("all");
+  const { t, language } = useLanguage();
 
   const filteredTestimonies = selectedProduct === "all" 
     ? testimonies 
@@ -22,14 +25,10 @@ const TestimoniesPage = () => {
       <section className="relative py-12 md:py-20 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `linear-gradient(to bottom, hsl(var(--primary) / 0.85), hsl(var(--primary) / 0.9)), url(${productsGroup})` }}>
         <div className="container text-center space-y-4">
           <h1 className="text-4xl font-bold tracking-tight sm:text-5xl text-white">
-            Nos Clients{" "}
-            <span className="text-accent">
-              Témoignent
-            </span>
+            {t.testimonials.title}{" "}
+            <span className="text-accent">{t.testimonials.titleHighlight}</span>
           </h1>
-          <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            Découvrez les retours de nos clients satisfaits
-          </p>
+          <p className="text-lg text-white/80 max-w-2xl mx-auto">{t.testimonials.subtitle}</p>
         </div>
       </section>
 
@@ -42,19 +41,22 @@ const TestimoniesPage = () => {
                 selectedProduct === "all" ? "bg-primary text-primary-foreground" : "bg-muted hover:bg-muted/80"
               }`}
             >
-              Tous les produits
+              {language === 'fr' ? 'Tous les produits' : 'All products'}
             </button>
-            {products.map(product => (
-              <button
-                key={product.id}
-                onClick={() => setSelectedProduct(product.id)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                  selectedProduct === product.id ? "bg-primary text-primary-foreground" : "bg-muted hover:bg-muted/80"
-                }`}
-              >
-                {product.name}
-              </button>
-            ))}
+            {products.map(product => {
+              const productT = productTranslations[language][product.id as keyof typeof productTranslations.fr];
+              return (
+                <button
+                  key={product.id}
+                  onClick={() => setSelectedProduct(product.id)}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                    selectedProduct === product.id ? "bg-primary text-primary-foreground" : "bg-muted hover:bg-muted/80"
+                  }`}
+                >
+                  {productT?.name || product.name}
+                </button>
+              );
+            })}
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -70,7 +72,7 @@ const TestimoniesPage = () => {
                 <div className="pt-4 border-t">
                   <p className="font-semibold">{testimony.name}</p>
                   <p className="text-sm text-muted-foreground">{testimony.location}</p>
-                  <p className="text-xs text-primary mt-1">{testimony.productName}</p>
+                  <p className="text-xs text-primary mt-1">{t.testimonials.product}: {testimony.productName}</p>
                 </div>
               </Card>
             ))}

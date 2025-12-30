@@ -1,4 +1,5 @@
 import baumeKineKidsNew from "@/assets/baume-kine-kids-new.png";
+import baumeKineTube from "@/assets/baume-kine-tube.jpg";
 import gelKineNew from "@/assets/gel-kine-new.png";
 import huileKineNew from "@/assets/huile-kine-new.png";
 import menthPlusNew from "@/assets/menth-plus-new.png";
@@ -24,7 +25,7 @@ export const products: Product[] = [
     name: "Baume Kiné +",
     description: "Soulagement efficace des douleurs musculaires et articulaires",
     longDescription: "Le Baume Kiné + est un produit thérapeutique puissant formulé pour soulager rapidement les douleurs musculaires et articulaires. Sa formule à base d'ingrédients naturels pénètre en profondeur pour offrir un soulagement durable.",
-    image: gelKineNew,
+    image: baumeKineTube,
     category: "Thérapeutique",
     features: [
       "Anti-inflammatoire et analgésique",

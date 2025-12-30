@@ -1,8 +1,11 @@
 import { Facebook, Phone, MapPin, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import ayelLogo from "@/assets/ayel-logo-new.png";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 export const Footer = () => {
+  const { t, language } = useLanguage();
+
   const handleWhatsAppClick = () => {
     window.open("https://wa.me/237699000000", "_blank");
   };
@@ -20,7 +23,7 @@ export const Footer = () => {
               />
             </Link>
             <p className="text-sm text-muted-foreground">
-              Votre partenaire santé pour des solutions naturelles et efficaces à base de plantes.
+              {t.footer.description}
             </p>
             <div className="flex gap-4">
               <a 
@@ -47,27 +50,27 @@ export const Footer = () => {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-sm font-semibold text-primary">Nos Produits</h3>
+            <h3 className="text-sm font-semibold text-primary">{t.nav.products}</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link to="/produits/baume-kine" className="hover:text-primary transition-colors">Baume Kiné +</Link></li>
-              <li><Link to="/produits/gel-kine" className="hover:text-primary transition-colors">Gel Kiné +</Link></li>
-              <li><Link to="/produits/huile-kine" className="hover:text-primary transition-colors">Huile Kiné +</Link></li>
-              <li><Link to="/produits/menth-plus" className="hover:text-primary transition-colors">Menth +</Link></li>
+              <li><Link to="/produits" className="hover:text-primary transition-colors">Baume Kiné +</Link></li>
+              <li><Link to="/produits" className="hover:text-primary transition-colors">Gel Kiné +</Link></li>
+              <li><Link to="/produits" className="hover:text-primary transition-colors">Huile Kiné +</Link></li>
+              <li><Link to="/produits" className="hover:text-primary transition-colors">Menth +</Link></li>
             </ul>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-sm font-semibold text-primary">Navigation</h3>
+            <h3 className="text-sm font-semibold text-primary">{t.footer.quickLinks}</h3>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><Link to="/produits" className="hover:text-primary transition-colors">Tous les produits</Link></li>
-              <li><Link to="/temoignages" className="hover:text-primary transition-colors">Témoignages clients</Link></li>
-              <li><Link to="/points-de-vente" className="hover:text-primary transition-colors">Où nous trouver</Link></li>
-              <li><Link to="/evenements" className="hover:text-primary transition-colors">Événements</Link></li>
+              <li><Link to="/produits" className="hover:text-primary transition-colors">{t.nav.products}</Link></li>
+              <li><Link to="/temoignages" className="hover:text-primary transition-colors">{t.nav.testimonials}</Link></li>
+              <li><Link to="/points-de-vente" className="hover:text-primary transition-colors">{t.nav.salesPoints}</Link></li>
+              <li><Link to="/evenements" className="hover:text-primary transition-colors">{t.nav.events}</Link></li>
             </ul>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-sm font-semibold text-primary">Nous Contacter</h3>
+            <h3 className="text-sm font-semibold text-primary">{t.footer.contact}</h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
@@ -83,7 +86,7 @@ export const Footer = () => {
                   className="flex items-center gap-2 text-accent hover:text-accent/80 transition-colors font-medium"
                 >
                   <MessageCircle className="h-4 w-4" />
-                  Écrire sur WhatsApp
+                  {language === 'fr' ? 'Écrire sur WhatsApp' : 'Write on WhatsApp'}
                 </button>
               </li>
             </ul>
@@ -91,7 +94,7 @@ export const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t border-border/40 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} AYEL Group. Tous droits réservés.</p>
+          <p>© {new Date().getFullYear()} AYEL Group. {t.footer.rights}</p>
         </div>
       </div>
     </footer>
