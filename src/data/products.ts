@@ -26,7 +26,7 @@ export const products: Product[] = [
     description: "Soulagement efficace des douleurs musculaires et articulaires",
     longDescription: "Le Baume Kiné + est un produit thérapeutique puissant formulé pour soulager rapidement les douleurs musculaires et articulaires. Sa formule à base d'ingrédients naturels pénètre en profondeur pour offrir un soulagement durable.",
     image: baumeKineTube,
-    category: "Thérapeutique",
+    category: "Douleurs chroniques",
     features: [
       "Anti-inflammatoire et analgésique",
       "Menthe, camphre et eucalyptus",
@@ -68,7 +68,7 @@ export const products: Product[] = [
     description: "Formule douce spécialement conçue pour les enfants",
     longDescription: "Le Baume Kiné + Kids est une formule adaptée aux peaux sensibles des enfants. Efficace mais doux, il soulage les douleurs musculaires tout en respectant la délicatesse de leur peau.",
     image: baumeKineKidsNew,
-    category: "Enfants",
+    category: "Pédiatrie",
     features: [
       "Anti-inflammatoire et analgésique",
       "Formule calmante et apaisante",
@@ -128,7 +128,7 @@ export const products: Product[] = [
     description: "Formule respiratoire adaptée aux enfants",
     longDescription: "Menth + Kids est spécialement formulé pour les enfants souffrant de troubles respiratoires. Sa concentration adaptée offre un soulagement efficace tout en étant doux pour les jeunes.",
     image: menthKidsJar,
-    category: "Enfants",
+    category: "Pédiatrie",
     features: [
       "Mucolytique et anti-inflammatoire",
       "Essence de menthe 4% et eucalyptus 1,1%",
