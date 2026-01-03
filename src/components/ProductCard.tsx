@@ -21,9 +21,9 @@ export const ProductCard = ({ id, name, description, image, category, features }
   const displayFeatures = productT?.features || features;
 
   const categoryMap: Record<string, keyof typeof t.categories> = {
-    "Thérapeutique": "therapeutic",
+    "Douleurs chroniques": "therapeutic",
     "Traumatologie": "traumatology",
-    "Enfants": "children",
+    "Pédiatrie": "children",
     "Massage": "massage",
     "Respiratoire": "respiratory",
   };

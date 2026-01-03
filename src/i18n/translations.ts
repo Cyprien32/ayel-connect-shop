@@ -13,7 +13,7 @@ export const translations = {
     },
     // Hero
     hero: {
-      badge: "Votre santé, notre priorité",
+      badge: "KINÉ+, et la douleur disparaît",
       title1: "Solutions Naturelles",
       title2: "Pour Votre Bien-Être",
       description: "Découvrez notre gamme complète de produits thérapeutiques à base d'ingrédients naturels.",
@@ -89,9 +89,9 @@ export const translations = {
     },
     // Categories
     categories: {
-      therapeutic: "Thérapeutique",
+      therapeutic: "Douleurs chroniques",
       traumatology: "Traumatologie",
-      children: "Enfants",
+      children: "Pédiatrie",
       massage: "Massage",
       respiratory: "Respiratoire",
     },
@@ -108,7 +108,7 @@ export const translations = {
     },
     // Hero
     hero: {
-      badge: "Your health, our priority",
+      badge: "KINÉ+, and the pain disappears",
       title1: "Natural Solutions",
       title2: "For Your Well-Being",
       description: "Discover our complete range of therapeutic products made from natural ingredients.",
@@ -184,9 +184,9 @@ export const translations = {
     },
     // Categories
     categories: {
-      therapeutic: "Therapeutic",
+      therapeutic: "Chronic Pain",
       traumatology: "Traumatology",
-      children: "Children",
+      children: "Pediatrics",
       massage: "Massage",
       respiratory: "Respiratory",
     },

@@ -1,4 +1,4 @@
-import { Facebook, Phone, MapPin, MessageCircle } from "lucide-react";
+import { Facebook, Phone, MapPin, MessageCircle, Leaf } from "lucide-react";
 import { Link } from "react-router-dom";
 import ayelLogo from "@/assets/ayel-logo-new.png";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -11,7 +11,12 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="border-t border-border/40 bg-primary/5">
+    <footer className="border-t border-border/40 bg-primary/5 relative overflow-hidden">
+      {/* Decorative plant elements */}
+      <div className="absolute inset-0 pointer-events-none">
+        <Leaf className="absolute top-10 right-10 w-24 h-24 text-accent/5 rotate-45" />
+        <Leaf className="absolute bottom-10 left-10 w-16 h-16 text-accent/5 -rotate-12" />
+      </div>
       <div className="container py-12 md:py-16">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
