@@ -196,136 +196,136 @@ export const translations = {
 export const productTranslations = {
   fr: {
     "baume-kine": {
-      name: "Baume Kiné +",
-      description: "Soulagement efficace des douleurs musculaires et articulaires",
-      longDescription: "Le Baume Kiné + est un produit thérapeutique puissant formulé pour soulager rapidement les douleurs musculaires et articulaires. Sa formule à base d'ingrédients naturels pénètre en profondeur pour offrir un soulagement durable.",
+      name: "Baume KINÉ+",
+      description: "Soulagement des douleurs chroniques : arthroses, lombalgies, cervicalgies",
+      longDescription: "Le Baume KINÉ+ est un produit thérapeutique puissant à base d'extraits de plantes pour soulager les douleurs chroniques.",
       features: [
-        "Anti-inflammatoire et analgésique",
-        "Menthe, camphre et eucalyptus",
-        "Pour douleurs musculaires et articulaires"
+        "Principes actifs : Menthe, camphre, eucalyptus",
+        "Propriétés : Anti-inflammatoire, analgésique",
+        "Indications : Arthroses, lombalgies, cervicalgies"
       ],
       modeEmploi: "Appliquer une petite quantité sur la zone douloureuse et masser délicatement jusqu'à absorption complète. Utiliser 2 à 3 fois par jour.",
     },
     "gel-kine": {
-      name: "Gel Kiné +",
-      description: "Traitement des entorses, foulures et traumatismes aigus",
-      longDescription: "Le Gel Kiné + est spécialement formulé pour traiter les traumatismes sportifs et les blessures aiguës. Sa texture gel permet une application précise et une absorption rapide pour un soulagement immédiat.",
+      name: "Gel KINÉ+",
+      description: "Traitement des douleurs aiguës : entorses, contusions, foulures",
+      longDescription: "Le Gel KINÉ+ est spécialement formulé pour traiter les douleurs aiguës et les traumatismes sportifs.",
       features: [
-        "Analgésique et anti-inflammatoire",
-        "Menthe 2% et Eucalyptus 1,1%",
-        "Pour entorse, foulure et tendinite"
+        "Principes actifs : Menthe, menthe poivrée, eucalyptus",
+        "Propriétés : Anti-inflammatoire, analgésique",
+        "Indications : Entorses, contusions, foulures"
       ],
       modeEmploi: "Appliquer généreusement sur la zone affectée avec un massage doux. Peut être utilisé plusieurs fois par jour selon les besoins.",
     },
     "baume-kine-kids": {
-      name: "Baume Kiné + Kids",
-      description: "Formule douce spécialement conçue pour les enfants",
-      longDescription: "Le Baume Kiné + Kids est une formule adaptée aux peaux sensibles des enfants. Efficace mais doux, il soulage les douleurs musculaires tout en respectant la délicatesse de leur peau.",
+      name: "Baume KINÉ+ Kids",
+      description: "Formule douce pour les inconforts articulaires et musculaires des enfants",
+      longDescription: "Le Baume KINÉ+ Kids est une formule adaptée aux peaux sensibles des enfants avec des principes actifs doux et apaisants.",
       features: [
-        "Anti-inflammatoire et analgésique",
-        "Formule calmante et apaisante",
-        "Massage thérapeutique pour enfants"
+        "Principes actifs : Camomille matricaire, ylang ylang, ravinstara",
+        "Propriétés : Antispasmodique, calmante, apaisante, hydratante",
+        "Indications : Inconforts articulaires, musculaires et cutanés"
       ],
       modeEmploi: "Appliquer une petite quantité et masser doucement la zone concernée. Convient aux enfants à partir de 3 ans.",
     },
     "huile-kine": {
-      name: "Huile Kiné +",
-      description: "Huile de massage thérapeutique et décontractante",
-      longDescription: "L'Huile Kiné + est une huile de massage premium enrichie en essences naturelles. Idéale pour les massages thérapeutiques, elle détend les muscles et favorise la récupération.",
+      name: "Huile KINÉ+",
+      description: "Huile de massage pour crampes et contractures musculaires",
+      longDescription: "L'Huile KINÉ+ est une huile de massage thérapeutique idéale pour les crampes, contractures et massages décontractants.",
       features: [
-        "Analgésique myorelaxant",
-        "Essences de camphre et eucalyptus",
-        "Massage thérapeutique et décontractant"
+        "Principes actifs : Camphre, eucalyptus",
+        "Propriétés : Anti-inflammatoire, myorelaxant",
+        "Indications : Crampes, contractures musculaires, massages thérapeutiques"
       ],
       modeEmploi: "Appliquer une petite quantité sur la zone à traiter, masser jusqu'à pénétration complète de l'huile.",
     },
     "menth-plus": {
-      name: "Menth +",
+      name: "Menth+",
       description: "Solution naturelle pour les troubles respiratoires",
-      longDescription: "Menth + est votre allié contre les troubles respiratoires. Sa formule concentrée en essences de menthe et d'eucalyptus dégage les voies respiratoires et apaise la toux.",
+      longDescription: "Menth+ est votre allié contre les troubles respiratoires. Sa formule concentrée en essences de menthe et d'eucalyptus dégage les voies respiratoires.",
       features: [
-        "Mucolytique et antitussif",
-        "Essences de menthe 13,8% et eucalyptus 3%",
-        "Pour toux, rhume et grippe"
+        "Principes actifs : Menthe, eucalyptus",
+        "Propriétés : Antitussif, décongestionnant nasal, mucolytique",
+        "Indications : Toux, rhume, congestion nasale"
       ],
       modeEmploi: "Appliquer sur la poitrine et le dos en massant légèrement. Pour inhalation, ajouter une noix de produit dans de l'eau chaude.",
     },
     "menth-kids": {
-      name: "Menth + Kids",
+      name: "Menth+ Kids",
       description: "Formule respiratoire adaptée aux enfants",
-      longDescription: "Menth + Kids est spécialement formulé pour les enfants souffrant de troubles respiratoires. Sa concentration adaptée offre un soulagement efficace tout en étant doux pour les jeunes.",
+      longDescription: "Menth+ Kids est spécialement formulé pour les enfants souffrant de troubles respiratoires avec une concentration adaptée.",
       features: [
-        "Mucolytique et anti-inflammatoire",
-        "Essence de menthe 4% et eucalyptus 1,1%",
-        "Pour encombrement bronchique et toux"
+        "Principes actifs : Menthe, eucalyptus",
+        "Propriétés : Antitussif, décongestionnant nasal, mucolytique",
+        "Indications : Toux, rhume, congestion nasale"
       ],
       modeEmploi: "Appliquer sur la poitrine de l'enfant en massant doucement. Convient aux enfants à partir de 2 ans.",
     },
   },
   en: {
     "baume-kine": {
-      name: "Baume Kiné +",
-      description: "Effective relief for muscle and joint pain",
-      longDescription: "Baume Kiné + is a powerful therapeutic product formulated to quickly relieve muscle and joint pain. Its natural ingredient formula penetrates deeply to provide lasting relief.",
+      name: "Baume KINÉ+",
+      description: "Relief for chronic pain: arthritis, lower back pain, neck pain",
+      longDescription: "Baume KINÉ+ is a powerful therapeutic product made from plant extracts to relieve chronic pain.",
       features: [
-        "Anti-inflammatory and analgesic",
-        "Menthol, camphor and eucalyptus",
-        "For muscle and joint pain"
+        "Active ingredients: Mint, camphor, eucalyptus",
+        "Properties: Anti-inflammatory, analgesic",
+        "Indications: Arthritis, lower back pain, neck pain"
       ],
       modeEmploi: "Apply a small amount to the painful area and massage gently until completely absorbed. Use 2 to 3 times a day.",
     },
     "gel-kine": {
-      name: "Gel Kiné +",
-      description: "Treatment for sprains, strains and acute trauma",
-      longDescription: "Gel Kiné + is specially formulated to treat sports injuries and acute injuries. Its gel texture allows precise application and rapid absorption for immediate relief.",
+      name: "Gel KINÉ+",
+      description: "Treatment for acute pain: sprains, bruises, strains",
+      longDescription: "Gel KINÉ+ is specially formulated to treat acute pain and sports injuries.",
       features: [
-        "Analgesic and anti-inflammatory",
-        "Menthol 2% and Eucalyptus 1.1%",
-        "For sprains, strains and tendinitis"
+        "Active ingredients: Mint, peppermint, eucalyptus",
+        "Properties: Anti-inflammatory, analgesic",
+        "Indications: Sprains, bruises, strains"
       ],
       modeEmploi: "Apply generously to the affected area with a gentle massage. Can be used several times a day as needed.",
     },
     "baume-kine-kids": {
-      name: "Baume Kiné + Kids",
-      description: "Gentle formula specially designed for children",
-      longDescription: "Baume Kiné + Kids is a formula adapted to children's sensitive skin. Effective yet gentle, it relieves muscle pain while respecting the delicacy of their skin.",
+      name: "Baume KINÉ+ Kids",
+      description: "Gentle formula for children's joint and muscle discomfort",
+      longDescription: "Baume KINÉ+ Kids is a formula adapted to children's sensitive skin with gentle and soothing active ingredients.",
       features: [
-        "Anti-inflammatory and analgesic",
-        "Calming and soothing formula",
-        "Therapeutic massage for children"
+        "Active ingredients: German chamomile, ylang ylang, ravintsara",
+        "Properties: Antispasmodic, calming, soothing, moisturizing",
+        "Indications: Joint, muscle and skin discomfort"
       ],
       modeEmploi: "Apply a small amount and gently massage the affected area. Suitable for children from 3 years old.",
     },
     "huile-kine": {
-      name: "Huile Kiné +",
-      description: "Therapeutic and relaxing massage oil",
-      longDescription: "Huile Kiné + is a premium massage oil enriched with natural essences. Ideal for therapeutic massages, it relaxes muscles and promotes recovery.",
+      name: "Huile KINÉ+",
+      description: "Massage oil for cramps and muscle contractures",
+      longDescription: "Huile KINÉ+ is a therapeutic massage oil ideal for cramps, contractures and relaxing massages.",
       features: [
-        "Muscle relaxant analgesic",
-        "Camphor and eucalyptus essences",
-        "Therapeutic and relaxing massage"
+        "Active ingredients: Camphor, eucalyptus",
+        "Properties: Anti-inflammatory, muscle relaxant",
+        "Indications: Cramps, muscle contractures, therapeutic massages"
       ],
       modeEmploi: "Apply a small amount to the area to be treated, massage until the oil is completely absorbed.",
     },
     "menth-plus": {
-      name: "Menth +",
+      name: "Menth+",
       description: "Natural solution for respiratory problems",
-      longDescription: "Menth + is your ally against respiratory problems. Its formula concentrated in menthol and eucalyptus essences clears the airways and soothes coughs.",
+      longDescription: "Menth+ is your ally against respiratory problems. Its formula concentrated in mint and eucalyptus essences clears the airways.",
       features: [
-        "Mucolytic and antitussive",
-        "Menthol 13.8% and eucalyptus 3% essences",
-        "For cough, cold and flu"
+        "Active ingredients: Mint, eucalyptus",
+        "Properties: Antitussive, nasal decongestant, mucolytic",
+        "Indications: Cough, cold, nasal congestion"
       ],
       modeEmploi: "Apply to chest and back with a light massage. For inhalation, add a small amount to hot water.",
     },
     "menth-kids": {
-      name: "Menth + Kids",
+      name: "Menth+ Kids",
       description: "Respiratory formula adapted for children",
-      longDescription: "Menth + Kids is specially formulated for children suffering from respiratory problems. Its adapted concentration offers effective relief while being gentle on young ones.",
+      longDescription: "Menth+ Kids is specially formulated for children suffering from respiratory problems with an adapted concentration.",
       features: [
-        "Mucolytic and anti-inflammatory",
-        "Menthol 4% and eucalyptus 1.1% essence",
-        "For bronchial congestion and cough"
+        "Active ingredients: Mint, eucalyptus",
+        "Properties: Antitussive, nasal decongestant, mucolytic",
+        "Indications: Cough, cold, nasal congestion"
       ],
       modeEmploi: "Apply to the child's chest with a gentle massage. Suitable for children from 2 years old.",
     },
