@@ -50,10 +50,13 @@ export const Hero = () => {
       <div className="container relative z-10">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
           {/* Left content */}
-          <div className="space-y-8 max-w-xl">
-            <span className="text-accent font-semibold tracking-wide uppercase text-sm">
-              AYEL
-            </span>
+          <div className="space-y-6 max-w-xl">
+            <div className="flex items-center gap-3">
+              <div className="h-1 w-12 bg-gradient-to-r from-primary to-accent rounded-full" />
+              <span className="text-primary font-bold tracking-widest text-lg">
+                AYEL
+              </span>
+            </div>
             
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl text-foreground leading-tight">
               {t.hero.title1}
