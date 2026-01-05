@@ -12,7 +12,7 @@ export const Hero = () => {
   };
 
   return (
-    <section id="accueil" className="relative min-h-[90vh] flex items-center bg-background overflow-hidden">
+    <section id="accueil" className="relative min-h-[70vh] flex items-center bg-background overflow-hidden py-10 md:py-16">
       {/* Decorative shapes - Blue/Green theme */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* Large blue leaf shape behind image */}
