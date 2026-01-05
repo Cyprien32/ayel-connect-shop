@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Leaf, MessageCircle } from "lucide-react";
+import { ArrowRight, MessageCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import productsGroup from "@/assets/products-group.png";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -12,61 +12,100 @@ export const Hero = () => {
   };
 
   return (
-    <section id="accueil" className="relative overflow-hidden bg-gradient-to-br from-primary/10 via-background to-accent/10 py-12 md:py-20">
-      {/* Decorative plant elements */}
+    <section id="accueil" className="relative min-h-[90vh] flex items-center bg-background overflow-hidden">
+      {/* Decorative shapes - Blue/Green theme */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <svg className="absolute -top-20 -left-20 w-96 h-96 text-accent/10" viewBox="0 0 200 200" fill="currentColor">
-          <path d="M100,10 Q120,50 100,90 Q80,130 100,170 Q110,130 130,100 Q150,70 130,40 Q110,10 100,10 Z" />
-          <path d="M60,30 Q80,60 70,100 Q60,140 80,160 Q70,120 90,80 Q110,40 80,20 Q60,10 60,30 Z" />
+        {/* Large blue leaf shape behind image */}
+        <svg 
+          className="absolute top-1/4 right-0 w-[600px] h-[600px] text-primary/10" 
+          viewBox="0 0 200 200" 
+          fill="currentColor"
+        >
+          <path d="M100,20 Q150,50 160,100 Q170,150 130,180 Q90,200 60,160 Q30,120 50,70 Q70,20 100,20 Z" />
         </svg>
-        <svg className="absolute -bottom-20 -right-20 w-80 h-80 text-accent/10 rotate-180" viewBox="0 0 200 200" fill="currentColor">
-          <path d="M100,10 Q120,50 100,90 Q80,130 100,170 Q110,130 130,100 Q150,70 130,40 Q110,10 100,10 Z" />
-          <path d="M140,30 Q160,60 150,100 Q140,140 160,160 Q150,120 170,80 Q190,40 160,20 Q140,10 140,30 Z" />
+        
+        {/* Bottom left green decorative leaf */}
+        <svg 
+          className="absolute -bottom-20 -left-20 w-80 h-80 text-accent/15 rotate-45" 
+          viewBox="0 0 200 200" 
+          fill="currentColor"
+        >
+          <path d="M100,10 Q140,40 150,90 Q160,140 120,170 Q80,200 50,150 Q20,100 60,50 Q100,10 100,10 Z" />
         </svg>
-        <Leaf className="absolute top-1/4 right-10 w-16 h-16 text-accent/15 rotate-45" />
-        <Leaf className="absolute bottom-1/3 left-10 w-12 h-12 text-accent/15 -rotate-12" />
-        <Leaf className="absolute top-1/2 right-1/4 w-8 h-8 text-accent/10 rotate-90" />
+        
+        {/* Bottom right decorative shape */}
+        <svg 
+          className="absolute -bottom-10 right-1/4 w-64 h-64 text-accent/10" 
+          viewBox="0 0 200 200" 
+          fill="currentColor"
+        >
+          <path d="M100,30 Q130,50 140,90 Q150,130 120,160 Q90,180 60,150 Q30,110 50,70 Q80,30 100,30 Z" />
+        </svg>
+
+        {/* Small floating accent */}
+        <div className="absolute top-20 left-1/4 w-4 h-4 rounded-full bg-accent/30" />
+        <div className="absolute bottom-1/3 left-16 w-3 h-3 rounded-full bg-primary/30" />
       </div>
       
       <div className="container relative z-10">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-          <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 rounded-full bg-accent/10 border border-accent/20 px-4 py-2 text-sm font-medium text-accent">
-              <Leaf className="h-4 w-4" />
-              {t.hero.naturalBadge}
-            </div>
+        <div className="grid gap-12 lg:grid-cols-2 lg:gap-20 items-center">
+          {/* Left content */}
+          <div className="space-y-8 max-w-xl">
+            <span className="text-accent font-semibold tracking-wide uppercase text-sm">
+              AYEL
+            </span>
             
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl text-foreground leading-tight">
               {t.hero.title1}
-              <span className="block bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <span className="block text-primary">
                 {t.hero.title2}
               </span>
             </h1>
-            <p className="text-lg text-muted-foreground max-w-xl">
+            
+            <p className="text-lg text-muted-foreground leading-relaxed">
               {t.hero.description}
             </p>
 
-            <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="gap-2" asChild>
+            <div className="flex flex-wrap gap-4 pt-2">
+              <Button 
+                size="lg" 
+                className="gap-2 bg-accent hover:bg-accent/90 text-accent-foreground px-8 uppercase tracking-wide font-semibold" 
+                asChild
+              >
                 <Link to="/produits">
                   {t.hero.viewProducts}
                   <ArrowRight className="h-5 w-5" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="gap-2 border-accent text-accent hover:bg-accent hover:text-accent-foreground" onClick={handleWhatsApp}>
-                <MessageCircle className="h-5 w-5" />
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="gap-2 border-foreground text-foreground hover:bg-foreground hover:text-background px-8 uppercase tracking-wide font-semibold" 
+                onClick={handleWhatsApp}
+              >
                 {t.hero.contactUs}
+                <ArrowRight className="h-5 w-5" />
               </Button>
             </div>
           </div>
 
-          <div className="relative flex flex-col items-center">
-            <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-primary/20 rounded-3xl blur-2xl" />
-            <img src={productsGroup} alt="Gamme KINÉ+" className="relative rounded-3xl w-full object-contain" />
-            <div className="relative mt-6 text-center">
-              <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-                {t.hero.slogan}
-              </p>
+          {/* Right image with decorative frame */}
+          <div className="relative flex justify-center lg:justify-end">
+            {/* Image container with rounded corners */}
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-br from-primary/20 via-transparent to-accent/20 rounded-[2rem] blur-xl" />
+              <img 
+                src={productsGroup} 
+                alt="Gamme KINÉ+" 
+                className="relative rounded-[1.5rem] w-full max-w-lg object-contain shadow-2xl" 
+              />
+              
+              {/* Slogan badge */}
+              <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-background border-2 border-primary rounded-full px-6 py-3 shadow-lg">
+                <p className="text-lg md:text-xl font-bold text-primary whitespace-nowrap">
+                  {t.hero.slogan}
+                </p>
+              </div>
             </div>
           </div>
         </div>
