@@ -50,7 +50,7 @@ export const About = () => {
   ];
 
   return (
-    <section id="apropos" className="py-20 md:py-32">
+    <section id="apropos" className="py-10 md:py-16">
       <div className="container space-y-12">
         <div className="text-center space-y-4 max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">
@@ -82,7 +82,7 @@ export const About = () => {
           ))}
         </div>
 
-        <div className="grid gap-12 lg:grid-cols-2 items-center mt-20">
+        <div className="grid gap-12 lg:grid-cols-2 items-center mt-10">
           <div className="space-y-6">
             <h3 className="text-2xl font-bold md:text-3xl">
               {language === 'fr' ? 'Notre Engagement Qualité' : 'Our Quality Commitment'}

@@ -7,7 +7,7 @@ export const Products = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="produits" className="py-20 md:py-32 bg-muted/30 relative overflow-hidden">
+    <section id="produits" className="py-10 md:py-16 bg-muted/30 relative overflow-hidden">
       {/* Decorative plant elements */}
       <div className="absolute inset-0 pointer-events-none">
         <Leaf className="absolute top-10 left-10 w-20 h-20 text-accent/10 rotate-12" />

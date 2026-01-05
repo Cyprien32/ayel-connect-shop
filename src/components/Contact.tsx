@@ -13,7 +13,7 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-32 bg-muted/30">
+    <section id="contact" className="py-10 md:py-16 bg-muted/30">
       <div className="container">
         <div className="grid gap-12 lg:grid-cols-2 items-start">
           <div className="space-y-8">
