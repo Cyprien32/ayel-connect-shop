@@ -33,7 +33,7 @@ export const Hero = () => {
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 rounded-full bg-accent/10 border border-accent/20 px-4 py-2 text-sm font-medium text-accent">
               <Leaf className="h-4 w-4" />
-              {t.hero.badge}
+              {t.hero.naturalBadge}
             </div>
             
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
@@ -60,9 +60,14 @@ export const Hero = () => {
             </div>
           </div>
 
-          <div className="relative">
+          <div className="relative flex flex-col items-center">
             <div className="absolute -inset-4 bg-gradient-to-r from-accent/20 to-primary/20 rounded-3xl blur-2xl" />
-            <img src={productsGroup} alt="Produits AYEL" className="relative rounded-3xl w-full object-contain" />
+            <img src={productsGroup} alt="Gamme KINÉ+" className="relative rounded-3xl w-full object-contain" />
+            <div className="relative mt-6 text-center">
+              <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                {t.hero.slogan}
+              </p>
+            </div>
           </div>
         </div>
       </div>

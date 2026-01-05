@@ -13,7 +13,8 @@ export const translations = {
     },
     // Hero
     hero: {
-      badge: "KINÉ+, et la douleur disparaît",
+      naturalBadge: "100% extraits de plantes",
+      slogan: "KINÉ+, et la douleur disparaît",
       title1: "Solutions Naturelles",
       title2: "Pour Votre Bien-Être",
       description: "Découvrez notre gamme complète de produits thérapeutiques à base d'ingrédients naturels.",
@@ -108,7 +109,8 @@ export const translations = {
     },
     // Hero
     hero: {
-      badge: "KINÉ+, and the pain disappears",
+      naturalBadge: "100% plant extracts",
+      slogan: "KINÉ+, and the pain disappears",
       title1: "Natural Solutions",
       title2: "For Your Well-Being",
       description: "Discover our complete range of therapeutic products made from natural ingredients.",
